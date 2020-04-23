@@ -18,6 +18,7 @@ namespace Minirechner_TFO_Melvin
             Console.WriteLine("Geben sie die zweite Zahl ein:");
             Zahl2 = Convert.ToInt32(Console.ReadLine());
             Addieren(Zahl1, Zahl2);
+            Subtrahiere(Zahl1, Zahl2);
             Console.ReadKey();
         }
         static void Titel(string Titel) {
@@ -34,7 +35,12 @@ namespace Minirechner_TFO_Melvin
         static int Addieren(int Nr1, int Nr2)
         {
             Console.WriteLine("Addieren Ergebnis:" + (Nr1 +Nr2));
-            return Nr2;
+            return Nr1;
+        }
+        static int Subtrahiere(int Nr1, int Nr2)
+        {
+            Console.WriteLine("Subtrahieren Ergebnis:" + (Nr1 - Nr2));
+            return Nr1;
         }
     }
 }
