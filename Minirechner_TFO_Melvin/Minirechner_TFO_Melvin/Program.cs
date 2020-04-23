@@ -20,6 +20,7 @@ namespace Minirechner_TFO_Melvin
             Addieren(Zahl1, Zahl2);
             Subtrahiere(Zahl1, Zahl2);
             Multiplizieren(Zahl1, Zahl2);
+            Dividieren(Zahl1, Zahl2);
             Console.ReadKey();
         }
         static void Titel(string Titel) {
@@ -46,6 +47,10 @@ namespace Minirechner_TFO_Melvin
         static int Multiplizieren(int Nr1, int Nr2)
         {
             Console.WriteLine("Multiplizieren Ergebnis:" + (Nr1 * Nr2));
+            return Nr1;
+        }
+        static int Dividieren(int Nr1, int Nr2) {
+            Console.WriteLine("Dividieren Ergebnis:" + (Nr1 / Nr2));
             return Nr1;
         }
     }
