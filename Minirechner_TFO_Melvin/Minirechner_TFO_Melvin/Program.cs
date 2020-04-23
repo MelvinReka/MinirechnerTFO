@@ -17,6 +17,7 @@ namespace Minirechner_TFO_Melvin
             Zahl1 = Convert.ToInt32(Console.ReadLine());
             Console.WriteLine("Geben sie die zweite Zahl ein:");
             Zahl2 = Convert.ToInt32(Console.ReadLine());
+            Addieren(Zahl1, Zahl2);
             Console.ReadKey();
         }
         static void Titel(string Titel) {
@@ -30,6 +31,10 @@ namespace Minirechner_TFO_Melvin
                 Console.Write("*");
             }
         }
-
+        static int Addieren(int Nr1, int Nr2)
+        {
+            Console.WriteLine("Addieren Ergebnis:" + (Nr1 +Nr2));
+            return Nr2;
+        }
     }
 }
